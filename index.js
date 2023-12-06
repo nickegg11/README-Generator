@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
-const util = require('util');
+
 
 
 
@@ -49,8 +49,8 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        name: 'username',
-        message: 'What is your GitHub Username?',
+        name: 'GitHubUrl',
+        message: 'What is your GitHub URL?',
     },
     {
         type: 'input',
@@ -65,7 +65,7 @@ const promptUser = () => {
   ]);
 };
 
-const generateREADME = ({title, description, installation , usage, license, test, username, email, contributions}) =>
+const generateREADME = ({title, description, installation , usage, license, test, GitHubUrl, email, contributions}) =>
  `#### Table of Contents
  1. [Application Description](#application-description)
  2. [Installation Instructions](#installation-instructions)
@@ -96,7 +96,7 @@ const generateREADME = ({title, description, installation , usage, license, test
  ## Questions
   For questions or concerns, please contact ${email}
 
-  Find me on GitHub at ${username}`;
+  Find me on GitHub at ${GitHubUrl}`;
 
 
   const init = () => {
