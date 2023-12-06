@@ -8,24 +8,24 @@
  7. [Questions](#questions)
 
  ## Project Description
-  bg
+  To generate a professional README.md through nodejs
 
  ## Installation Instructions
-  bg
+  npm install inquirer packages
 
  ## Usage Info
-  bg
+  To create README.md quickly, cleanly, and professionally
 
  ## Contribution Guidelines
-  bg
+  
  
  ## Test Instructions
-  bg'
+  TEST
 
  ## License
-  GNU AGPLv3
+  MIT
 
  ## Questions
-  For questions or concerns, please contact bg
+  For questions or concerns, please contact nickeggleston@yahoo.com
 
-  Find me on GitHub at bg
+  Find me on GitHub at nickegg11
