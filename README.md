@@ -1,4 +1,7 @@
-#### Table of Contents
+# README.md Generator
+
+ 
+ #### Table of Contents
  1. [Application Description](#application-description)
  2. [Installation Instructions](#installation-instructions)
  3. [Usage Info](#usage-info)
@@ -8,13 +11,13 @@
  7. [Questions](#questions)
 
  ## Project Description
-  To generate a professional README.md through nodejs
+  To generate a professiona; README.md through nodejs
 
  ## Installation Instructions
   npm install inquirer packages
 
  ## Usage Info
-  To create README.md quickly, cleanly, and professionally
+  To create a README.md quickly, cleanly, and professionally
 
  ## Contribution Guidelines
   
@@ -28,4 +31,4 @@
  ## Questions
   For questions or concerns, please contact nickeggleston@yahoo.com
 
-  Find me on GitHub at nickegg11
+  Find me on GitHub at https://github.com/nickegg11

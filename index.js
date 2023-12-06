@@ -66,7 +66,10 @@ const promptUser = () => {
 };
 
 const generateREADME = ({title, description, installation , usage, license, test, GitHubUrl, email, contributions}) =>
- `#### Table of Contents
+ `# ${title}
+
+ 
+ #### Table of Contents
  1. [Application Description](#application-description)
  2. [Installation Instructions](#installation-instructions)
  3. [Usage Info](#usage-info)
