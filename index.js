@@ -64,7 +64,7 @@ const promptUser = () => {
         message: 'What is your email?',
     },
     {
-        type: 'input',
+        type: 'confirm',
         name: 'contributions',
         message: 'If contributing, please follow proper contributing code of conduct.',
     },
@@ -107,8 +107,10 @@ const generateREADME = ({title, badges, description, installation , usage, licen
  ## Questions
   For questions or concerns, please contact ${email}
 
-  Find me on GitHub at ${GitHubUrl}`;
+  Find me on GitHub at ${GitHubUrl}
 
+ ## Links
+  Link to video of README.md Generator functioning https://drive.google.com/file/d/19hpOAWCos4Cifn2wXzloqqIb5SnnuFQn/view`;
 // writes the file
   const init = () => {
     promptUser()

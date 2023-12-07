@@ -15,13 +15,13 @@
   To professionally generate a README.md through nodejs
 
  ## Installation Instructions
-  npm install shields and inquirer packages
+  npm install shields and inquirer
 
  ## Usage Info
-  To quickly and cleanly generate a README.md for projects
+  To quickly and cleanly generate README.md for projects
 
  ## Contribution Guidelines
-  
+  true
  
  ## Test Instructions
   TEST
@@ -32,4 +32,7 @@
  ## Questions
   For questions or concerns, please contact nickeggleston@yahoo.com
 
-  Find me on GitHub at https://github.com/nickegg11
+  Find me on GitHub at github.com/nickegg11
+
+ ## Links
+  Link to video of README.md Generator functioning https://drive.google.com/file/d/19hpOAWCos4Cifn2wXzloqqIb5SnnuFQn/view
