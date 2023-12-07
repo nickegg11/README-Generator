@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
-
+const badges = require('./badges');
 
 
 
@@ -11,6 +11,13 @@ const promptUser = () => {
       type: 'input',
       name: 'title',
       message: 'What is the title of your application?',
+    },
+    {
+        type: 'list',
+        name: 'badges',
+        message: 'Choose appropriate licensing badge.',
+        choices: badges,
+
     },
     {
       type: 'input',
@@ -35,11 +42,7 @@ const promptUser = () => {
       choices: [
       "GNU AGPLv3",
       "GNU GPLv3",
-      "GNU LGPLv3",
-      "Mozilla",
       "MIT",
-      "Apache",
-      "Boost",
       ]
     },
     {
@@ -62,13 +65,15 @@ const promptUser = () => {
         name: 'contributions',
         message: 'If contributing, please follow proper contributing code of conduct.',
     },
+    
   ]);
 };
 
-const generateREADME = ({title, description, installation , usage, license, test, GitHubUrl, email, contributions}) =>
+const generateREADME = ({title, badges, description, installation , usage, license, test, GitHubUrl, email, contributions}) =>
  `# ${title}
+  ## ${badges}
 
- 
+
  #### Table of Contents
  1. [Application Description](#application-description)
  2. [Installation Instructions](#installation-instructions)
