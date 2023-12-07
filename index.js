@@ -13,13 +13,6 @@ const promptUser = () => {
       message: 'What is the title of your application?',
     },
     {
-        type: 'list',
-        name: 'badges',
-        message: 'Choose appropriate licensing badge.',
-        choices: badges,
-
-    },
-    {
       type: 'input',
       name: 'description',
       message: 'What is the purpose of your application?',
@@ -44,6 +37,13 @@ const promptUser = () => {
       "GNU GPLv3",
       "MIT",
       ]
+    },
+    {
+        type: 'list',
+        name: 'badges',
+        message: 'Choose appropriate licensing badge.',
+        choices: badges,
+
     },
     {
         type: 'input',

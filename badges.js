@@ -1,7 +1,7 @@
 const badges = [
     {
     name: 'MIT',
-    value: '[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)',
+    value: '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)',
     },
     {
     name: 'GNU GPLv3',
