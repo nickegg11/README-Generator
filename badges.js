@@ -1,3 +1,4 @@
+// Badges for possible licenses
 const badges = [
     {
     name: 'MIT',

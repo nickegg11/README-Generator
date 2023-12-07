@@ -1,10 +1,11 @@
 const inquirer = require('inquirer');
 const { writeFile } = require('fs').promises;
+// link to Badges.js
 const badges = require('./badges');
 
 
 
-
+// node js prompts through inquirer to generate answers
 const promptUser = () => {
     return inquirer.prompt([
     {
@@ -28,6 +29,7 @@ const promptUser = () => {
       name: 'usage',
       message: 'Enter how you plan to use this application.',
     },
+    // License Choices
     {
       type: 'list',
       name: 'license',
@@ -38,6 +40,7 @@ const promptUser = () => {
       "MIT",
       ]
     },
+    // Badge choice (could be a function so it auto generates whatever license is chosen previously)
     {
         type: 'list',
         name: 'badges',
@@ -68,7 +71,7 @@ const promptUser = () => {
     
   ]);
 };
-
+// README.md generates below
 const generateREADME = ({title, badges, description, installation , usage, license, test, GitHubUrl, email, contributions}) =>
  `# ${title}
   ## ${badges}
@@ -106,7 +109,7 @@ const generateREADME = ({title, badges, description, installation , usage, licen
 
   Find me on GitHub at ${GitHubUrl}`;
 
-
+// writes the file
   const init = () => {
     promptUser()
         .then((answers) => writeFile('README.md', generateREADME(answers)))
